@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamari Luxurious Tours | Explore the Pearl of Africa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/kamari.png" type="image/x-icon">
+</head>
+<body>
+
+    <nav class="navbar" id="navbar">
+        <a href="#home" class="logo">KAMARI<span>LUXURIOUS TOURS UGANDA</span></a>
+        <button class="menu-btn" id="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="nav-menu" id="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#philosophy">Philosophy</a></li>
+            <li><a href="#tours">Expeditions</a></li>
+            <li><a href="#booking">Inquire</a></li>
+            <li><a href="https://wa.me/256792915940" class="whatsapp-link" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a></li>
+        </ul>
+    </nav>
+
+    <header class="hero" id="home">
+        <h1 class="reveal">Explore the Pearl of Africa to its Heights!</h1>
+        <p class="reveal">"Nature loving is a religion"</p>
+        <a href="#booking" class="btn-gold reveal" style="width: auto;">
+            <i class="fa-solid fa-envelope"></i> Request an Invitation
+        </a>
+    </header>
+
+    <section class="section reveal" id="philosophy">
+        <div class="section-title">
+            <h2>Our Core Values</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="grid-3">
+            <div class="card">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <h3>Bespoke Craftsmanship</h3>
+                <p>We reject standard itineraries. Every journey is a unique work of art designed to reflect your specific desires.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-shield-heart"></i>
+                <h3>Meticulous Service</h3>
+                <p>Intuitive excellence that anticipates your needs before they are voiced, ensuring a seamless, worry-free journey.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-leaf"></i>
+                <h3>Authentic Stewardship</h3>
+                <p>Operating with deep respect for Uganda's wildlife and culture through ethical and sustainable practices.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="tours">
+        <div class="section-title reveal">
+            <h2>Curated Expeditions</h2>
+            <p>Hand-picked luxury encounters across Uganda</p>
+            <div class="divider"></div>
+        </div>
+        
+        <div class="tours-container">
+            <div class="tour-item reveal">
+                <div class="tour-bg" style="background-image: url('download.jpg')"></div>
+                <div class="tour-overlay"></div>
+                <!-- <span class="tour-price">From $9,000</span> -->
+                <h3>Signature Gorilla Curator</h3>
+                <p>Fly-in logistics, private air charters, and unhurried 4-hour habituation encounters.</p>
+            </div>
+
+            <div class="tour-item reveal">
+                <div class="tour-bg" style="background-image: url('Electric\ Safari\ in\ Kenya.jpg')"></div>
+                <div class="tour-overlay"></div>
+                <!-- <span class="tour-price">From $13,300</span> -->
+                <h3>The Pearl of Silence</h3>
+                <p>A 7-day digital detox. Device surrender for deep reconnection in Lake Mutanda and Kalinzu Forest.</p>
+            </div>
+
+            <div class="tour-item reveal">
+                <div class="tour-bg" style="background-image: url('Uncover\ Your\ Must-Have\ Africa\ Travel\ List\ for\ Unforgettable\ Adventures_.jpg')"></div>
+                <div class="tour-overlay"></div>
+                <!-- <span class="tour-price">From $12,600</span> -->
+                <h3>The Grand Safari</h3>
+                <p>10 days covering the ultimate circuit. Private land cruisers with satellite Wi-Fi and bush dinners.</p>
+            </div>
+        </div>
+
+        <div class="heritage-feature reveal">
+            <div class="heritage-img"></div>
+            <div class="heritage-text">
+                <h3>The Ankole Heritage</h3>
+                <p>Live the life of an Ankole Royal at Nshenyi Cultural Village.</p>
+                <ul class="heritage-list">
+                    <li><i class="fa-solid fa-check"></i> 06:00 AM Milking Ritual (Okukama) </li>
+                    <li><i class="fa-solid fa-check"></i> Traditional Ghee & Eshabwe making </li>
+                    <li><i class="fa-solid fa-check"></i> Sunset hills overlooking Rwanda & Tanzania </li>
+                    <!-- <li><i class="fa-solid fa-check"></i> Starting at $3,600 per person </li> -->
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section testimonials reveal">
+        <div class="section-title">
+            <h2>Guest Impressions</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="testimonial-slider">
+            <p>"The level of detail was staggering. We didn't just see gorillas; we felt the soul of the forest. Paul's personal touch made everything effortless."</p>
+            <span>&mdash; The Hendersons, UK</span>
+        </div>
+    </section>
+
+    <section class="booking-section" id="booking">
+        <div class="flex-container reveal">
+            <div class="form-content">
+                <h2 style="margin-bottom: 30px;">Inquire Personally</h2>
+                <div class="input-group">
+                    <label>Full Name *</label>
+                    <input type="text" id="name" placeholder="How shall we address you?" required>
+                </div>
+                <div class="input-group">
+                    <label>Country of Residence *</label>
+                    <select id="country" required>
+                        <option value="">— Select Country —</option>
+                        <option value="🇺🇸 United States">🇺🇸 United States</option>
+                        <option value="🇬🇧 United Kingdom">🇬🇧 United Kingdom</option>
+                        <option value="🇩🇪 Germany">🇩🇪 Germany</option>
+                        <option value="🇫🇷 France">🇫🇷 France</option>
+                        <option value="🇨🇦 Canada">🇨🇦 Canada</option>
+                        <option value="🇦🇺 Australia">🇦🇺 Australia</option>
+                        <option value="🇳🇱 Netherlands">🇳🇱 Netherlands</option>
+                        <option value="🇸🇪 Sweden">🇸🇪 Sweden</option>
+                        <option value="🇨🇭 Switzerland">🇨🇭 Switzerland</option>
+                        <option value="🇦🇪 UAE">🇦🇪 UAE</option>
+                        <option value="🇿🇦 South Africa">🇿🇦 South Africa</option>
+                        <option value="🇰🇪 Kenya">🇰🇪 Kenya</option>
+                        <option value="🇷🇼 Rwanda">🇷🇼 Rwanda</option>
+                        <option value="🇺🇬 Uganda">🇺🇬 Uganda</option>
+                        <option value="Other">🌎 Other</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label>Phone Number (Optional)</label>
+                    <input type="tel" id="phone" placeholder="e.g., +1 555 123 4567" inputmode="tel">
+                </div>
+                <div class="input-group">
+                    <label>Preferred Expedition</label>
+                    <select id="tour">
+                        <option>The Signature Primate Curator</option>
+                        <option>The Pearl of Silence (Detox)</option>
+                        <option>The Grand Safari Circuit</option>
+                        <option>Ankole Heritage Experience</option>
+                        <option>Custom Bespoke Request</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label>Special Requests</label>
+                    <textarea id="message" rows="4" placeholder="Dietary needs, photography gear, or celebration details..."></textarea>
+                </div>
+
+                <div class="consent-container">
+                    <input type="checkbox" id="consent" class="consent-checkbox" required>
+                    <label for="consent" class="consent-label">
+                        I consent to Kamari Luxurious Tours processing my personal data to respond to this inquiry, in accordance with our <a href="#" target="_blank">Privacy Policy</a> and GDPR/UK DPA 2018. I understand I may withdraw consent at any time.
+                    </label>
+                </div>
+
+                <button class="btn-gold" onclick="sendInquiry()" id="submit-btn">
+                    <span class="loader" id="submit-loader"></span>
+                    <span id="submit-text"><i class="fa-solid fa-paper-plane"></i> Send Inquiry via WhatsApp</span>
+                </button>
+
+                <a href="https://wa.me/256792915940" class="btn-whatsapp" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i> Instant Concierge Chat
+                </a>
+            </div>
+            <div class="form-sidebar">
+                <h3 style="color: var(--gold); margin-bottom: 20px;">The Kamari Promise</h3>
+                <p style="margin-bottom: 30px; opacity: 0.8;">"I personally oversee every itinerary from the first email to the final departure. You are not a booking; you are our guest."</p>
+                <div style="font-size: 0.9rem;">
+                    <p><i class="fa-solid fa-user-tie" style="color: var(--gold); margin-right: 10px;"></i> Ampiire Paul, CEO </p>
+                    <p style="margin-top: 15px;"><i class="fa-solid fa-envelope" style="color: var(--gold); margin-right: 10px;"></i> paulkamari45@gmail.com </p>
+                    <p style="margin-top: 15px;"><i class="fa-solid fa-phone" style="color: var(--gold); margin-right: 10px;"></i> +256 792 915 940</p>
+                    <br>
+                     <a href="Kamari luxurious tours Uganda" target="_blank"  style="color: aliceblue; font-size: 20px; text-decoration: none;">&nbsp;&nbsp;<i class="fa-brands fa-instagram" style="color: aliceblue; font-size: 20px;"></i>Instagram</a> <p>Kamari luxurious tours Uganda</p>
+                     <br>
+            <a href="#" target="_blank"  style="color: aliceblue; font-size: 20px; text-decoration: none;">&nbsp;&nbsp;<i class="fa-brands fa-facebook-f" style="color: aliceblue; font-size: 20px;"></i>Facebook</a>  <p>Kamari luxtours.</p>
+            <br>
+            <a href="Kamari luxtours." target="_blank"  style="color: aliceblue; font-size: 20px; text-decoration: none;">&nbsp;&nbsp;<i class="fa-brands fa-linkedin-in" style="color: aliceblue; font-size: 20px;"></i>LinkedIn</a> <p>Kamari luxtours.</p>
+            <br>
+            <a href="Kamari luxtours." target="_blank"  style="color: aliceblue; font-size: 20px; text-decoration: none;"><i class="fa-brands fa-x-twitter"></i> WE are on X</a> <p>Kamari luxtours</p>
+        
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-logo">KAMARI</div>
+        <p>"Explore the pearl of Africa to its heights"</p>
+        <div class="social-links">
+            <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+        <p style="font-size: 0.75rem; color: #555; margin-top: 40px;">
+            &copy; 2026 Kamari Luxurious Tours Uganda SMC Ltd. Registered with URSB & UTB.<br>
+            P.O Box 199058 Kampala GPO.
+        </p>
+        <p>
+            Website Designed By Mosh-Wycliff 2026 &copy;
+            <a href="moshwycliff-spec.github.io/robo">see developer</a>
+        </p>
+    </footer>
+
+    <!-- Toast for copy success -->
+    <div id="copy-toast">✅ Link copied to clipboard!</div>
+
+    <script src="script.js"></script>
+</body>
+<!-- the website was coded by Mosh-wycliff @ 2026 -->
+</html>
